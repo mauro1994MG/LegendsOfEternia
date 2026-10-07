@@ -1,0 +1,283 @@
+<title>Textos para Hotmart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&display=swap">
+<style>
+/* Layout: sticky number nav on top, then one card per section with its own copy button. Orange, black and white. */
+:root { --bg:#FFFFFF; --panel:#F6F4F2; --line:#E4DFDA; --fg:#141211; --muted:#6B645E; --or:#E85F00; --onor:#FFFFFF; --ink:#141211;
+  --display:"Anton",Impact,"Arial Narrow",sans-serif; --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0D0D0D; --panel:#181614; --line:#2c2723; --fg:#F4F1EE; --muted:#A9A29C; --or:#FF6B00; --onor:#0D0D0D; --ink:#F4F1EE; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg:#0D0D0D; --panel:#181614; --line:#2c2723; --fg:#F4F1EE; --muted:#A9A29C; --or:#FF6B00; --onor:#0D0D0D; --ink:#F4F1EE; color-scheme: dark; }
+html { background: var(--bg); }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.6; padding-inline: 16px; padding-block: 28px 64px; }
+.wrap { max-width: 820px; margin: 0 auto; display: grid; gap: 20px; }
+.kicker { color: var(--or); font-weight: 700; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(34px, 7vw, 56px); line-height: 1.02; margin: 6px 0 10px; text-transform: uppercase; text-wrap: balance; }
+h1 span { color: var(--or); }
+.lead { color: var(--muted); max-width: 62ch; margin: 0; }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 6px; }
+nav a { text-decoration: none; color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 3px 9px; font-size: 13px; font-weight: 500; }
+nav a:hover, nav a:focus-visible { background: var(--or); color: var(--onor); border-color: var(--or); outline: none; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px 18px 16px; scroll-margin-top: 70px; min-width: 0; }
+.chead { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+.cnum { color: var(--or); font-weight: 700; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+h2 { font-family: var(--display); font-weight: 400; font-size: 22px; line-height: 1.1; margin: 2px 0 0; text-transform: uppercase; }
+.copy { flex: none; background: var(--or); color: var(--onor); border: 0; border-radius: 6px; padding: 8px 14px; font: 700 13px var(--body); cursor: pointer; }
+.copy:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
+.txt { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font-family: var(--body); font-size: 14.5px; line-height: 1.65; color: var(--fg); }
+.note { font-size: 13px; color: var(--muted); }
+</style>
+<div class="wrap">
+  <header>
+    <div class="kicker">Para publicar en Hotmart</div>
+    <h1>Textos para <span>Hotmart</span></h1>
+    <p class="lead">Todo el contenido de la ficha, la página de ventas y la promoción de <b>Toda la Verdad sobre Marca Personal</b>. Copiá cada sección con su botón. Completá lo que está entre corchetes con tus datos reales.</p>
+  </header>
+  <nav aria-label="Secciones"><a href="#s1">1</a><a href="#s2">2</a><a href="#s3">3</a><a href="#s4">4</a><a href="#s5">5</a><a href="#s6">6</a><a href="#s7">7</a><a href="#s8">8</a><a href="#s9">9</a><a href="#s10">10</a><a href="#s11">11</a><a href="#s12">12</a><a href="#s13">13</a><a href="#s14">14</a><a href="#s15">15</a></nav>
+  <section class="card" id="s1"><div class="chead"><div><div class="cnum">1</div><h2>Datos del producto</h2></div><button class="copy" type="button" data-i="0">Copiar</button></div><pre class="txt" id="t0">Nombre del producto: Toda la Verdad sobre Marca Personal
+Subtítulo: Cómo construir una marca que atraiga clientes, no solo seguidores
+Autor: Emanuel Galván · Experto en Marketing Digital
+Formato: eBook en PDF (116 páginas, formato 6×9 pulgadas, cómodo para leer en el celular)
+Idioma: Español
+Categoría sugerida: Marketing digital / Negocios y emprendimiento (elegí la más parecida que te ofrezca Hotmart)
+Incluye: 17 capítulos, workbook de 10 secciones, plan de acción de 30 días, 20 ganchos para empezar y checklist de publicación
+Archivos para subir: el PDF final y la imagen de portada (JPG)</pre></section><section class="card" id="s2"><div class="chead"><div><div class="cnum">2</div><h2>Descripción corta (para el listado)</h2></div><button class="copy" type="button" data-i="1">Copiar</button></div><pre class="txt" id="t1">Opción A:
+Aprendé a construir una marca personal que atraiga clientes y no solo seguidores. Método paso a paso, con workbook y plan de 30 días.
+
+Opción B:
+El eBook práctico para profesionales y emprendedores que quieren que las personas correctas los conozcan, confíen en ellos y los contraten.</pre></section><section class="card" id="s3"><div class="chead"><div><div class="cnum">3</div><h2>Descripción larga (copiar y pegar)</h2></div><button class="copy" type="button" data-i="2">Copiar</button></div><pre class="txt" id="t2">¿Estás construyendo tu marca personal para conseguir seguidores o para conseguir clientes?
+
+Esa es la decisión que cambia todo lo demás. Muchos te dicen que necesitás el contenido más amplio posible para sumar vistas. Pero las vistas no pagan facturas. Lo que hace crecer un negocio es la confianza de las personas correctas.
+
+Toda la Verdad sobre Marca Personal es una guía práctica, escrita para que la apliques, que te muestra cómo construir una marca personal pensada para atraer clientes, de forma intencional y sin agotarte en el intento.
+
+En 116 páginas vas a recorrer cuatro partes:
+
+PARTE 1 · ANTES DE EMPEZAR
+Definís qué querés lograr, descubrís si realmente necesitás una marca pública y te ubicás con honestidad como estudiante o como experto.
+
+PARTE 2 · POSICIONAMIENTO
+Entendés a tu cliente y su problema, encontrás tu postura distinta (lo que realmente creés aunque tu sector piense otra cosa) y la resumís en una frase clara que podés repetir.
+
+PARTE 3 · CONTENIDO
+Aprendés a generar confianza antes que alcance, a hablarle a quien todavía no te conoce, a presentar y empaquetar tus ideas y a estructurar cada pieza para que tu audiencia aprenda.
+
+PARTE 4 · SISTEMA
+Armás una forma de crear contenido que puedas sostener: tu capacidad real, tu medio, tus plataformas, tu ritmo, cómo reutilizar un mismo contenido y cómo delegar cuando llega la demanda.
+
+Cada capítulo incluye explicación completa, ejemplos, errores frecuentes y un ejercicio concreto, además de un desafío para tomar una decisión en las próximas 24 horas.
+
+Y además recibís:
+• Workbook con 10 secciones para completar
+• Plan de acción de 30 días
+• 20 ganchos listos para adaptar a tu tema
+• Checklist de publicación
+
+Este libro no promete fórmulas mágicas ni resultados garantizados. Te da un método claro, ejercicios y un sistema para construir tu marca con constancia y confianza.</pre></section><section class="card" id="s4"><div class="chead"><div><div class="cnum">4</div><h2>Lo que vas a aprender</h2></div><button class="copy" type="button" data-i="3">Copiar</button></div><pre class="txt" id="t3">• Definir tu resultado deseado con el mapa inverso y decidir si una marca pública te conviene
+• Saber si sos estudiante o experto y cómo comunicar desde ese lugar sin quemar tu credibilidad
+• Construir una marca de la que te sientas orgulloso y que no te agote
+• Identificar los problemas dolorosos de tu cliente ideal y crear tu solución distinta
+• Encontrar tu postura distinta con la tabla de desacuerdos, y saber cuál conecta más con tu audiencia
+• Entender cómo funciona realmente una marca y cómo elegir tus asociaciones
+• Escribir tu frase ancla, que resume a quién ayudás, cómo y por qué sos distinto
+• Priorizar la confianza sobre el alcance cuando tu oferta es de alto valor
+• Hablarle a una audiencia fría sin perder a la cálida
+• Presentar tus ideas con tu estilo natural y empaquetarlas para que alguien quiera abrirlas
+• Equilibrar contenido profundo, contenido amplio y contenido personal
+• Armar tu sistema: capacidad, medio, plataformas y ritmo que puedas sostener
+• Reutilizar un contenido largo en varias piezas hechas para cada plataforma
+• Planificar tus tres primeros contenidos, producirlos con preparación y delegar cuando crezca la demanda</pre></section><section class="card" id="s5"><div class="chead"><div><div class="cnum">5</div><h2>Para quién es y para quién no es</h2></div><button class="copy" type="button" data-i="4">Copiar</button></div><pre class="txt" id="t4">Es para vos si:
+• Sos profesional, consultor, coach, creativo o dueño de un negocio y querés que más personas te conozcan y confíen en vos
+• Querés atraer clientes y no solo sumar seguidores
+• Estás empezando con tu marca personal y no sabés por dónde empezar
+• Ya publicás, pero sentís que no genera consultas ni ventas
+• Querés un sistema que puedas sostener sin quemarte
+
+No es para vos si:
+• Buscás una fórmula mágica para hacerte viral de un día para otro
+• Querés resultados garantizados sin trabajar en tu marca
+• No estás dispuesto a completar ejercicios ni a publicar con constancia</pre></section><section class="card" id="s6"><div class="chead"><div><div class="cnum">6</div><h2>Contenido del libro</h2></div><button class="copy" type="button" data-i="5">Copiar</button></div><pre class="txt" id="t5">Introducción · ¿Seguidores o clientes?
+
+PARTE 1 · ANTES DE EMPEZAR
+01 · Definí tu resultado deseado
+02 · ¿Estudiante o experto?
+03 · Una marca que no te agote
+
+PARTE 2 · POSICIONAMIENTO
+04 · Tu cliente y su problema
+05 · Tu postura distinta
+06 · Cómo funciona realmente una marca
+07 · Tu frase ancla
+
+PARTE 3 · CONTENIDO
+08 · Confianza antes que alcance
+09 · Hablale a quien todavía no te conoce
+10 · Tu forma de presentar y tu empaque
+11 · Tres capas de contenido y cómo estructurarlo
+
+PARTE 4 · SISTEMA
+12 · Tu capacidad, tu medio y tus plataformas
+13 · Ritmo y mejora continua
+14 · Contenido madre y piezas hijas
+15 · Tus tres primeros contenidos
+16 · Producción y preparación
+17 · Equipo, delegación y demanda
+
+Conclusión · Empezá con lo que tenés
+Workbook: 10 secciones de ejercicios
+Plan de acción de 30 días
+Bonus: 20 ganchos para empezar y checklist de publicación</pre></section><section class="card" id="s7"><div class="chead"><div><div class="cnum">7</div><h2>Sobre el autor</h2></div><button class="copy" type="button" data-i="6">Copiar</button></div><pre class="txt" id="t6">Emanuel Galván es experto en marketing digital. Ayuda a profesionales y negocios a construir su presencia en redes con una estrategia de contenido clara, optimizando sus perfiles y mostrando lo que ya saben hacer para que las personas correctas los encuentren.
+
+[Completá con datos reales, por ejemplo: años de experiencia, rubros en los que trabajaste, tu sitio web y tus redes. Incluí solo lo que puedas respaldar.]
+
+Caso real (usalo solo si podés respaldarlo con pruebas o con permiso del cliente):
+Trabajó con un comunicador sobre temas espirituales que no se animaba a mostrarse en redes. Descubrieron que el problema no era la falta de ganas sino de conocimiento. Al aplicar una estrategia de contenido y optimizar sus perfiles, a los seis meses sus ventas, consultorías y conferencias crecieron unas 30 veces. Es un caso real y no una garantía: cada negocio es distinto.</pre></section><section class="card" id="s8"><div class="chead"><div><div class="cnum">8</div><h2>Preguntas frecuentes</h2></div><button class="copy" type="button" data-i="7">Copiar</button></div><pre class="txt" id="t7">¿Para quién es este libro?
+Para profesionales, emprendedores y dueños de negocios que quieren construir una marca personal que atraiga clientes. No hace falta experiencia previa en marketing.
+
+¿Necesito ser influencer o tener muchos seguidores?
+No. El libro parte de la idea contraria: no necesitás ser famoso, necesitás ser reconocible y confiable para las personas correctas.
+
+¿Es solo teoría?
+No. Cada capítulo termina con un ejercicio y un desafío para tomar una decisión en 24 horas. Además incluye un workbook y un plan de 30 días.
+
+¿En qué formato lo recibo?
+Es un eBook en PDF. Lo podés leer en el celular, la tablet o la computadora, e imprimir las páginas del workbook.
+
+¿Cuánto tiempo necesito para aplicarlo?
+Depende de tu ritmo. El plan de acción está pensado para recorrerse en 30 días, con tareas simples y concretas.
+
+¿Garantiza resultados?
+No. Ningún libro puede garantizar resultados. Te da un método, ejercicios y un sistema. Los resultados dependen de tu mercado, tu oferta, tu constancia y otros factores.
+
+¿Sirve si trabajo en un sector muy específico?
+Sí. El método se basa en entender a tu cliente y su problema, por lo que se adapta a distintos rubros.
+
+¿Hay soporte o comunidad?
+[Completá según lo que ofrezcas. Si no ofrecés soporte, podés sacar esta pregunta.]</pre></section><section class="card" id="s9"><div class="chead"><div><div class="cnum">9</div><h2>Garantía y aviso de resultados</h2></div><button class="copy" type="button" data-i="8">Copiar</button></div><pre class="txt" id="t8">Garantía: en Hotmart los compradores cuentan con un período de garantía de devolución. Revisá en tu panel las condiciones vigentes y ofrecé la que corresponda a tu producto.
+
+Aviso de resultados (para la página de ventas y la descripción):
+Los resultados dependen de tu mercado, tu oferta, tu dedicación y otros factores. Este libro no promete ni garantiza ingresos ni crecimiento. Los ejemplos con personas o negocios son ilustrativos.</pre></section><section class="card" id="s10"><div class="chead"><div><div class="cnum">10</div><h2>Palabras clave y títulos alternativos</h2></div><button class="copy" type="button" data-i="9">Copiar</button></div><pre class="txt" id="t9">Palabras clave:
+marca personal, personal branding, marketing digital, redes sociales, estrategia de contenido, cómo conseguir clientes, posicionamiento, autoridad, confianza, emprendedores, profesionales independientes, contenido para redes, atraer clientes, crear contenido, marketing para emprendedores
+
+Títulos alternativos para probar:
+• Marca Personal para Atraer Clientes
+• De Seguidores a Clientes
+• La Marca Personal que Sí Vende
+• Toda la Verdad sobre Marca Personal (el actual)</pre></section><section class="card" id="s11"><div class="chead"><div><div class="cnum">11</div><h2>Texto completo para la página de ventas</h2></div><button class="copy" type="button" data-i="10">Copiar</button></div><pre class="txt" id="t10">TITULAR (elegí uno):
+• ¿Seguidores o clientes? La verdad sobre la marca personal que nadie te cuenta
+• Dejá de sumar seguidores. Empezá a atraer clientes.
+• Cómo construir una marca personal que genere confianza y consultas
+
+SUBTITULAR:
+Una guía práctica, con workbook y plan de 30 días, para profesionales y emprendedores que quieren que las personas correctas los conozcan, confíen en ellos y los contraten.
+
+EL PROBLEMA:
+Publicás, te esforzás y a veces hasta conseguís vistas. Pero las consultas no llegan. Quizás sentís que tu sector está saturado, que no sabés qué decir, o que construir una marca personal es solo para influencers.
+
+La verdad es otra: las vistas no pagan facturas. Lo que hace crecer un negocio es la confianza de las personas correctas.
+
+LA SOLUCIÓN:
+Toda la Verdad sobre Marca Personal te muestra, paso a paso, cómo construir una marca pensada para atraer clientes, en lugar de acumular seguidores que nunca van a contratarte.
+
+QUÉ VAS A LOGRAR CON ESTE LIBRO:
+✓ Definir tu resultado y saber si una marca pública te conviene
+✓ Encontrar tu postura distinta y resumirla en una frase clara
+✓ Entender a tu cliente y su problema para crear contenido que le importe
+✓ Generar confianza antes que alcance
+✓ Hablarle a quien todavía no te conoce
+✓ Armar un sistema de contenido que puedas sostener sin quemarte
+✓ Reutilizar un mismo contenido en varias piezas
+✓ Saber cuándo y cómo delegar
+
+QUÉ INCLUYE:
+📘 17 capítulos con explicaciones, ejemplos y ejercicios
+📝 Workbook de 10 secciones
+📅 Plan de acción de 30 días
+🪝 20 ganchos listos para adaptar a tu tema
+✅ Checklist de publicación
+
+PARA QUIÉN ES:
+Profesionales, consultores, coaches, creativos y dueños de negocios que quieren atraer clientes con su marca personal.
+
+NO ES PARA VOS SI:
+Buscás una fórmula mágica para hacerte viral, o resultados garantizados sin trabajar en tu marca.
+
+SOBRE EL AUTOR:
+Emanuel Galván · Experto en Marketing Digital. [Completá con tu experiencia real.]
+
+PREGUNTAS FRECUENTES:
+(usá las de la sección 8)
+
+AVISO:
+Los resultados dependen de tu mercado, tu oferta, tu dedicación y otros factores. Este libro no promete ni garantiza ingresos ni crecimiento.
+
+LLAMADA A LA ACCIÓN (botón):
+• Quiero mi copia ahora
+• Empezar a construir mi marca</pre></section><section class="card" id="s12"><div class="chead"><div><div class="cnum">12</div><h2>Mensaje para afiliados</h2></div><button class="copy" type="button" data-i="11">Copiar</button></div><pre class="txt" id="t11">Asunto / título:
+Promocioná Toda la Verdad sobre Marca Personal
+
+Texto:
+Toda la Verdad sobre Marca Personal es un eBook práctico para profesionales y emprendedores que quieren atraer clientes con su marca personal, sin depender de la viralidad.
+
+Qué pueden decir:
+• Es una guía paso a paso, con ejercicios, workbook y plan de 30 días
+• Está pensada para quienes quieren clientes, no solo seguidores
+• Incluye 17 capítulos con ejemplos y errores frecuentes
+
+Qué no deben decir:
+• Que garantiza resultados o ingresos
+• Casos o testimonios inventados
+
+Material disponible: portada del libro y textos de esta guía. [Agregá tu enlace de afiliación y la comisión que decidas.]</pre></section><section class="card" id="s13"><div class="chead"><div><div class="cnum">13</div><h2>Ideas de publicaciones para promocionar</h2></div><button class="copy" type="button" data-i="12">Copiar</button></div><pre class="txt" id="t12">1. Gancho: “Si tu perfil recibe visitas pero nadie te escribe, probablemente estés optimizando para seguidores y no para clientes.”
+Desarrollo: explicá la diferencia en dos o tres frases y mencioná el libro al final.
+
+2. Gancho: “El error de hablarle solo a quienes ya te conocen.”
+Desarrollo: audiencia fría y cálida, con un ejemplo. Cierre con el capítulo 9.
+
+3. Gancho: “Tu postura distinta es tu mejor ventaja.”
+Desarrollo: contá la tabla de desacuerdos en pocos pasos.
+
+4. Gancho: “Por qué publicar todos los días puede ser un error.”
+Desarrollo: constancia antes que intensidad (capítulos 12 y 13).
+
+5. Gancho: “Tres preguntas antes de crear contenido.”
+Desarrollo: las tres primeras preguntas del mapa inverso.
+
+Llamada a la acción sugerida: “Si querés el método completo, está en Toda la Verdad sobre Marca Personal. Link en mi perfil.”</pre></section><section class="card" id="s14"><div class="chead"><div><div class="cnum">14</div><h2>Precio: orientación</h2></div><button class="copy" type="button" data-i="13">Copiar</button></div><pre class="txt" id="t13">Sugerencia de enfoque:
+• Probá un precio de lanzamiento por un tiempo limitado y luego subilo
+• Ofrecé dos opciones si querés: solo el libro, o libro más bonus (por ejemplo, plantillas o material extra que prepares vos)
+• Revisá el precio de libros similares en Hotmart para tener una referencia
+• Probá y ajustá según cómo respondan tus compradores
+
+El precio lo definís vos según tu mercado y tu moneda. Cuando tengas un número en mente, puedo adaptar la página de ventas.</pre></section><section class="card" id="s15"><div class="chead"><div><div class="cnum">15</div><h2>Checklist para publicar en Hotmart</h2></div><button class="copy" type="button" data-i="14">Copiar</button></div><pre class="txt" id="t14">☐ Crear el producto (tipo: eBook / producto digital)
+☐ Cargar nombre, descripción corta y descripción larga (secciones 1 a 3)
+☐ Subir la portada (JPG) y el PDF final
+☐ Elegir categoría y palabras clave
+☐ Definir precio, moneda y medios de pago
+☐ Configurar la garantía según tu panel
+☐ Redactar la página de ventas (sección 11)
+☐ Completar la sección de autor con datos reales
+☐ Decidir si habilitás afiliados y qué comisión
+☐ Revisar el PDF en celular y en computadora
+☐ Hacer una compra de prueba si la plataforma lo permite
+☐ Verificar que el aviso de resultados esté visible</pre></section>
+  <p class="note">Si el botón Copiar no funciona en tu vista, seleccioná el texto con el dedo o el mouse y copialo a mano.</p>
+</div>
+<script>
+(function () {
+  var SECS = ["Nombre del producto: Toda la Verdad sobre Marca Personal\nSubtítulo: Cómo construir una marca que atraiga clientes, no solo seguidores\nAutor: Emanuel Galván · Experto en Marketing Digital\nFormato: eBook en PDF (116 páginas, formato 6×9 pulgadas, cómodo para leer en el celular)\nIdioma: Español\nCategoría sugerida: Marketing digital / Negocios y emprendimiento (elegí la más parecida que te ofrezca Hotmart)\nIncluye: 17 capítulos, workbook de 10 secciones, plan de acción de 30 días, 20 ganchos para empezar y checklist de publicación\nArchivos para subir: el PDF final y la imagen de portada (JPG)", "Opción A:\nAprendé a construir una marca personal que atraiga clientes y no solo seguidores. Método paso a paso, con workbook y plan de 30 días.\n\nOpción B:\nEl eBook práctico para profesionales y emprendedores que quieren que las personas correctas los conozcan, confíen en ellos y los contraten.", "¿Estás construyendo tu marca personal para conseguir seguidores o para conseguir clientes?\n\nEsa es la decisión que cambia todo lo demás. Muchos te dicen que necesitás el contenido más amplio posible para sumar vistas. Pero las vistas no pagan facturas. Lo que hace crecer un negocio es la confianza de las personas correctas.\n\nToda la Verdad sobre Marca Personal es una guía práctica, escrita para que la apliques, que te muestra cómo construir una marca personal pensada para atraer clientes, de forma intencional y sin agotarte en el intento.\n\nEn 116 páginas vas a recorrer cuatro partes:\n\nPARTE 1 · ANTES DE EMPEZAR\nDefinís qué querés lograr, descubrís si realmente necesitás una marca pública y te ubicás con honestidad como estudiante o como experto.\n\nPARTE 2 · POSICIONAMIENTO\nEntendés a tu cliente y su problema, encontrás tu postura distinta (lo que realmente creés aunque tu sector piense otra cosa) y la resumís en una frase clara que podés repetir.\n\nPARTE 3 · CONTENIDO\nAprendés a generar confianza antes que alcance, a hablarle a quien todavía no te conoce, a presentar y empaquetar tus ideas y a estructurar cada pieza para que tu audiencia aprenda.\n\nPARTE 4 · SISTEMA\nArmás una forma de crear contenido que puedas sostener: tu capacidad real, tu medio, tus plataformas, tu ritmo, cómo reutilizar un mismo contenido y cómo delegar cuando llega la demanda.\n\nCada capítulo incluye explicación completa, ejemplos, errores frecuentes y un ejercicio concreto, además de un desafío para tomar una decisión en las próximas 24 horas.\n\nY además recibís:\n• Workbook con 10 secciones para completar\n• Plan de acción de 30 días\n• 20 ganchos listos para adaptar a tu tema\n• Checklist de publicación\n\nEste libro no promete fórmulas mágicas ni resultados garantizados. Te da un método claro, ejercicios y un sistema para construir tu marca con constancia y confianza.", "• Definir tu resultado deseado con el mapa inverso y decidir si una marca pública te conviene\n• Saber si sos estudiante o experto y cómo comunicar desde ese lugar sin quemar tu credibilidad\n• Construir una marca de la que te sientas orgulloso y que no te agote\n• Identificar los problemas dolorosos de tu cliente ideal y crear tu solución distinta\n• Encontrar tu postura distinta con la tabla de desacuerdos, y saber cuál conecta más con tu audiencia\n• Entender cómo funciona realmente una marca y cómo elegir tus asociaciones\n• Escribir tu frase ancla, que resume a quién ayudás, cómo y por qué sos distinto\n• Priorizar la confianza sobre el alcance cuando tu oferta es de alto valor\n• Hablarle a una audiencia fría sin perder a la cálida\n• Presentar tus ideas con tu estilo natural y empaquetarlas para que alguien quiera abrirlas\n• Equilibrar contenido profundo, contenido amplio y contenido personal\n• Armar tu sistema: capacidad, medio, plataformas y ritmo que puedas sostener\n• Reutilizar un contenido largo en varias piezas hechas para cada plataforma\n• Planificar tus tres primeros contenidos, producirlos con preparación y delegar cuando crezca la demanda", "Es para vos si:\n• Sos profesional, consultor, coach, creativo o dueño de un negocio y querés que más personas te conozcan y confíen en vos\n• Querés atraer clientes y no solo sumar seguidores\n• Estás empezando con tu marca personal y no sabés por dónde empezar\n• Ya publicás, pero sentís que no genera consultas ni ventas\n• Querés un sistema que puedas sostener sin quemarte\n\nNo es para vos si:\n• Buscás una fórmula mágica para hacerte viral de un día para otro\n• Querés resultados garantizados sin trabajar en tu marca\n• No estás dispuesto a completar ejercicios ni a publicar con constancia", "Introducción · ¿Seguidores o clientes?\n\nPARTE 1 · ANTES DE EMPEZAR\n01 · Definí tu resultado deseado\n02 · ¿Estudiante o experto?\n03 · Una marca que no te agote\n\nPARTE 2 · POSICIONAMIENTO\n04 · Tu cliente y su problema\n05 · Tu postura distinta\n06 · Cómo funciona realmente una marca\n07 · Tu frase ancla\n\nPARTE 3 · CONTENIDO\n08 · Confianza antes que alcance\n09 · Hablale a quien todavía no te conoce\n10 · Tu forma de presentar y tu empaque\n11 · Tres capas de contenido y cómo estructurarlo\n\nPARTE 4 · SISTEMA\n12 · Tu capacidad, tu medio y tus plataformas\n13 · Ritmo y mejora continua\n14 · Contenido madre y piezas hijas\n15 · Tus tres primeros contenidos\n16 · Producción y preparación\n17 · Equipo, delegación y demanda\n\nConclusión · Empezá con lo que tenés\nWorkbook: 10 secciones de ejercicios\nPlan de acción de 30 días\nBonus: 20 ganchos para empezar y checklist de publicación", "Emanuel Galván es experto en marketing digital. Ayuda a profesionales y negocios a construir su presencia en redes con una estrategia de contenido clara, optimizando sus perfiles y mostrando lo que ya saben hacer para que las personas correctas los encuentren.\n\n[Completá con datos reales, por ejemplo: años de experiencia, rubros en los que trabajaste, tu sitio web y tus redes. Incluí solo lo que puedas respaldar.]\n\nCaso real (usalo solo si podés respaldarlo con pruebas o con permiso del cliente):\nTrabajó con un comunicador sobre temas espirituales que no se animaba a mostrarse en redes. Descubrieron que el problema no era la falta de ganas sino de conocimiento. Al aplicar una estrategia de contenido y optimizar sus perfiles, a los seis meses sus ventas, consultorías y conferencias crecieron unas 30 veces. Es un caso real y no una garantía: cada negocio es distinto.", "¿Para quién es este libro?\nPara profesionales, emprendedores y dueños de negocios que quieren construir una marca personal que atraiga clientes. No hace falta experiencia previa en marketing.\n\n¿Necesito ser influencer o tener muchos seguidores?\nNo. El libro parte de la idea contraria: no necesitás ser famoso, necesitás ser reconocible y confiable para las personas correctas.\n\n¿Es solo teoría?\nNo. Cada capítulo termina con un ejercicio y un desafío para tomar una decisión en 24 horas. Además incluye un workbook y un plan de 30 días.\n\n¿En qué formato lo recibo?\nEs un eBook en PDF. Lo podés leer en el celular, la tablet o la computadora, e imprimir las páginas del workbook.\n\n¿Cuánto tiempo necesito para aplicarlo?\nDepende de tu ritmo. El plan de acción está pensado para recorrerse en 30 días, con tareas simples y concretas.\n\n¿Garantiza resultados?\nNo. Ningún libro puede garantizar resultados. Te da un método, ejercicios y un sistema. Los resultados dependen de tu mercado, tu oferta, tu constancia y otros factores.\n\n¿Sirve si trabajo en un sector muy específico?\nSí. El método se basa en entender a tu cliente y su problema, por lo que se adapta a distintos rubros.\n\n¿Hay soporte o comunidad?\n[Completá según lo que ofrezcas. Si no ofrecés soporte, podés sacar esta pregunta.]", "Garantía: en Hotmart los compradores cuentan con un período de garantía de devolución. Revisá en tu panel las condiciones vigentes y ofrecé la que corresponda a tu producto.\n\nAviso de resultados (para la página de ventas y la descripción):\nLos resultados dependen de tu mercado, tu oferta, tu dedicación y otros factores. Este libro no promete ni garantiza ingresos ni crecimiento. Los ejemplos con personas o negocios son ilustrativos.", "Palabras clave:\nmarca personal, personal branding, marketing digital, redes sociales, estrategia de contenido, cómo conseguir clientes, posicionamiento, autoridad, confianza, emprendedores, profesionales independientes, contenido para redes, atraer clientes, crear contenido, marketing para emprendedores\n\nTítulos alternativos para probar:\n• Marca Personal para Atraer Clientes\n• De Seguidores a Clientes\n• La Marca Personal que Sí Vende\n• Toda la Verdad sobre Marca Personal (el actual)", "TITULAR (elegí uno):\n• ¿Seguidores o clientes? La verdad sobre la marca personal que nadie te cuenta\n• Dejá de sumar seguidores. Empezá a atraer clientes.\n• Cómo construir una marca personal que genere confianza y consultas\n\nSUBTITULAR:\nUna guía práctica, con workbook y plan de 30 días, para profesionales y emprendedores que quieren que las personas correctas los conozcan, confíen en ellos y los contraten.\n\nEL PROBLEMA:\nPublicás, te esforzás y a veces hasta conseguís vistas. Pero las consultas no llegan. Quizás sentís que tu sector está saturado, que no sabés qué decir, o que construir una marca personal es solo para influencers.\n\nLa verdad es otra: las vistas no pagan facturas. Lo que hace crecer un negocio es la confianza de las personas correctas.\n\nLA SOLUCIÓN:\nToda la Verdad sobre Marca Personal te muestra, paso a paso, cómo construir una marca pensada para atraer clientes, en lugar de acumular seguidores que nunca van a contratarte.\n\nQUÉ VAS A LOGRAR CON ESTE LIBRO:\n✓ Definir tu resultado y saber si una marca pública te conviene\n✓ Encontrar tu postura distinta y resumirla en una frase clara\n✓ Entender a tu cliente y su problema para crear contenido que le importe\n✓ Generar confianza antes que alcance\n✓ Hablarle a quien todavía no te conoce\n✓ Armar un sistema de contenido que puedas sostener sin quemarte\n✓ Reutilizar un mismo contenido en varias piezas\n✓ Saber cuándo y cómo delegar\n\nQUÉ INCLUYE:\n📘 17 capítulos con explicaciones, ejemplos y ejercicios\n📝 Workbook de 10 secciones\n📅 Plan de acción de 30 días\n🪝 20 ganchos listos para adaptar a tu tema\n✅ Checklist de publicación\n\nPARA QUIÉN ES:\nProfesionales, consultores, coaches, creativos y dueños de negocios que quieren atraer clientes con su marca personal.\n\nNO ES PARA VOS SI:\nBuscás una fórmula mágica para hacerte viral, o resultados garantizados sin trabajar en tu marca.\n\nSOBRE EL AUTOR:\nEmanuel Galván · Experto en Marketing Digital. [Completá con tu experiencia real.]\n\nPREGUNTAS FRECUENTES:\n(usá las de la sección 8)\n\nAVISO:\nLos resultados dependen de tu mercado, tu oferta, tu dedicación y otros factores. Este libro no promete ni garantiza ingresos ni crecimiento.\n\nLLAMADA A LA ACCIÓN (botón):\n• Quiero mi copia ahora\n• Empezar a construir mi marca", "Asunto / título:\nPromocioná Toda la Verdad sobre Marca Personal\n\nTexto:\nToda la Verdad sobre Marca Personal es un eBook práctico para profesionales y emprendedores que quieren atraer clientes con su marca personal, sin depender de la viralidad.\n\nQué pueden decir:\n• Es una guía paso a paso, con ejercicios, workbook y plan de 30 días\n• Está pensada para quienes quieren clientes, no solo seguidores\n• Incluye 17 capítulos con ejemplos y errores frecuentes\n\nQué no deben decir:\n• Que garantiza resultados o ingresos\n• Casos o testimonios inventados\n\nMaterial disponible: portada del libro y textos de esta guía. [Agregá tu enlace de afiliación y la comisión que decidas.]", "1. Gancho: “Si tu perfil recibe visitas pero nadie te escribe, probablemente estés optimizando para seguidores y no para clientes.”\nDesarrollo: explicá la diferencia en dos o tres frases y mencioná el libro al final.\n\n2. Gancho: “El error de hablarle solo a quienes ya te conocen.”\nDesarrollo: audiencia fría y cálida, con un ejemplo. Cierre con el capítulo 9.\n\n3. Gancho: “Tu postura distinta es tu mejor ventaja.”\nDesarrollo: contá la tabla de desacuerdos en pocos pasos.\n\n4. Gancho: “Por qué publicar todos los días puede ser un error.”\nDesarrollo: constancia antes que intensidad (capítulos 12 y 13).\n\n5. Gancho: “Tres preguntas antes de crear contenido.”\nDesarrollo: las tres primeras preguntas del mapa inverso.\n\nLlamada a la acción sugerida: “Si querés el método completo, está en Toda la Verdad sobre Marca Personal. Link en mi perfil.”", "Sugerencia de enfoque:\n• Probá un precio de lanzamiento por un tiempo limitado y luego subilo\n• Ofrecé dos opciones si querés: solo el libro, o libro más bonus (por ejemplo, plantillas o material extra que prepares vos)\n• Revisá el precio de libros similares en Hotmart para tener una referencia\n• Probá y ajustá según cómo respondan tus compradores\n\nEl precio lo definís vos según tu mercado y tu moneda. Cuando tengas un número en mente, puedo adaptar la página de ventas.", "☐ Crear el producto (tipo: eBook / producto digital)\n☐ Cargar nombre, descripción corta y descripción larga (secciones 1 a 3)\n☐ Subir la portada (JPG) y el PDF final\n☐ Elegir categoría y palabras clave\n☐ Definir precio, moneda y medios de pago\n☐ Configurar la garantía según tu panel\n☐ Redactar la página de ventas (sección 11)\n☐ Completar la sección de autor con datos reales\n☐ Decidir si habilitás afiliados y qué comisión\n☐ Revisar el PDF en celular y en computadora\n☐ Hacer una compra de prueba si la plataforma lo permite\n☐ Verificar que el aviso de resultados esté visible"];
+  function fallback(i) {
+    var el = document.getElementById('t' + i);
+    var r = document.createRange(); r.selectNodeContents(el);
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+  }
+  document.querySelectorAll('.copy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var i = +b.dataset.i;
+      var done = function (ok) { b.textContent = ok ? 'Copiado' : 'Seleccionado: copiá a mano'; setTimeout(function () { b.textContent = 'Copiar'; }, 2200); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(SECS[i]).then(function () { done(true); }, function () { fallback(i); done(false); });
+      } else { fallback(i); done(false); }
+    });
+  });
+})();
+</script>
