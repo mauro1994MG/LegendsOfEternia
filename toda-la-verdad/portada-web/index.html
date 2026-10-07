@@ -1,0 +1,40 @@
+<title>Portada 600x600</title>
+<style>
+/* Layout: one centered 600x600 image with two download buttons beneath it. */
+:root { --bg:#FFFFFF; --fg:#141211; --muted:#6B645E; --line:#E4DFDA; --or:#E85F00; --onor:#FFFFFF; --body:system-ui,-apple-system,"Segoe UI",sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0D0D0D; --fg:#F4F1EE; --muted:#A9A29C; --line:#2c2723; --or:#FF6B00; --onor:#0D0D0D; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg:#0D0D0D; --fg:#F4F1EE; --muted:#A9A29C; --line:#2c2723; --or:#FF6B00; --onor:#0D0D0D; color-scheme: dark; }
+html { background: var(--bg); }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); line-height: 1.5; padding-inline: 16px; padding-block: 28px 48px; }
+.wrap { max-width: 640px; margin: 0 auto; display: grid; gap: 16px; justify-items: center; text-align: center; }
+h1 { font-size: 22px; margin: 0; }
+p { margin: 0; color: var(--muted); font-size: 14px; }
+img { width: 100%; max-width: 600px; height: auto; aspect-ratio: 1 / 1; border-radius: 6px; border: 1px solid var(--line); }
+.row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+button { background: var(--or); color: var(--onor); border: 0; border-radius: 6px; padding: 11px 18px; font: 700 14px var(--body); cursor: pointer; }
+button:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
+#st { min-height: 1.4em; font-size: 13px; color: var(--muted); }
+</style>
+<div class="wrap">
+  <h1>Portada del libro, 600 × 600 píxeles</h1>
+  <img src="Portada_600x600.png" width="600" height="600" alt="Portada cuadrada de Toda la Verdad sobre Marca Personal">
+  <div class="row"><button type="button" data-f="Portada_600x600.png">Descargar PNG</button><button type="button" data-f="Portada_600x600.jpg">Descargar JPG</button></div>
+  <div id="st" role="status"></div>
+  <p>Si el botón no funciona en tu vista, mantené presionada la imagen para guardarla, o abrí este enlace desde claude.ai en el navegador.</p>
+</div>
+<script>
+(function () {
+  var st = document.getElementById('st'), dl = null;
+  if (window.claude && window.claude.use) { window.claude.use('downloads').then(function (d) { dl = d; }); }
+  document.querySelectorAll('button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (!dl) { st.textContent = 'La descarga no está disponible en esta vista. Guardá la imagen manteniéndola presionada.'; return; }
+      st.textContent = 'Preparando…';
+      fetch(b.dataset.f).then(function (r) { return r.blob(); })
+        .then(function (blob) { return dl.save({ filename: b.dataset.f, data: blob }); })
+        .then(function () { st.textContent = 'Listo: archivo guardado.'; })
+        .catch(function (e) { st.textContent = (e && e.code === 'declined') ? 'Descarga cancelada.' : 'No se pudo descargar. Probá guardar la imagen manteniéndola presionada.'; });
+    });
+  });
+})();
+</script>
