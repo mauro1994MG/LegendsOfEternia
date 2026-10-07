@@ -23,7 +23,7 @@ def deflist(rows, cls=''):
 def ul(items): return '<ul class="bul">' + ''.join(f'<li>{i}</li>' for i in items) + '</ul>'
 def ol(items): return '<ol class="num">' + ''.join(f'<li><span class="n">{k+1:02d}</span><span>{i}</span></li>' for k, i in enumerate(items)) + '</ol>'
 def checks(items): return '<ul class="checks">' + ''.join(f'<li><span class="box"></span><span>{i}</span></li>' for i in items) + '</ul>'
-def case(title, *blocks): return f'<div class="case"><div class="ctag">Ejemplo ilustrativo</div><div class="ctitle">{title}</div>{"".join(blocks)}</div>'
+def case(title, *blocks): return f'<div class="case"><div class="ctag">Imaginá este caso</div><div class="ctitle">{title}</div>{"".join(blocks)}</div>'
 def exercise(title, *blocks, tag='Ejercicio'): return f'<div class="exer"><div class="etag">✎ {tag}</div><div class="etitle">{title}</div>{"".join(blocks)}</div>'
 def note(t): return f'<div class="note"><b>Nota:</b> {t}</div>'
 def keybox(title, *blocks): return f'<div class="keybox"><div class="ktitle">{title}</div>{"".join(blocks)}</div>'
