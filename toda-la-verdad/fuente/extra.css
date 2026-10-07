@@ -33,3 +33,9 @@
 .timeline .tlb { font-size: 8.1pt; line-height: 1.3; margin-bottom: .8mm; padding-bottom: .8mm; }
 .timeline .tld { margin-bottom: .8mm; padding: .8mm 0 1mm; font-size: 10pt; }
 .timeline .tlb .bul li { margin-bottom: .4mm; }
+
+.expb { border: 1.4px solid #0D0D0D; border-left: 2.4mm solid #FF6B00; border-radius: 0 3mm 3mm 0; padding: 4.2mm 4.6mm 2.6mm; margin: 5mm 0; background: #fff; }
+.expt { font-size: 6.6pt; letter-spacing: 2pt; font-weight: 800; text-transform: uppercase; color: #FF6B00; }
+.exph { font-family: Anton; font-size: 14pt; text-transform: uppercase; color: #0D0D0D; margin: 1.5mm 0 2.5mm; line-height: 1.1; }
+.expb p { font-size: 8.9pt; }
+.expb { break-inside: avoid; }

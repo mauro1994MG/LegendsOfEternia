@@ -28,6 +28,7 @@ def exercise(title, *blocks, tag='Ejercicio'): return f'<div class="exer"><div c
 def note(t): return f'<div class="note"><b>Nota:</b> {t}</div>'
 def keybox(title, *blocks): return f'<div class="keybox"><div class="ktitle">{title}</div>{"".join(blocks)}</div>'
 def learn(t): return f'<div class="learn">{t}</div>'
+def experience(title, *blocks): return f'<div class="expb"><div class="expt">Mi experiencia</div><div class="exph">{title}</div>{"".join(blocks)}</div>'
 def lines(n=2): return '<div class="wlines">' + '<div class="wl"></div>' * n + '</div>'
 def wq(q, n=2): return f'<div class="wq"><div class="wqt">{q}</div>{lines(n)}</div>'
 def chips(items): return '<div class="chips">' + ''.join(f'<span>{i}</span>' for i in items) + '</div>'
