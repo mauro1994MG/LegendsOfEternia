@@ -1,0 +1,74 @@
+<title>Tapas de Biblia</title>
+<style>
+/* Layout: intro and print specs, then one card per cover design with a wide preview and a PDF download button. */
+:root { --bg:#FFFFFF; --panel:#F6F4F2; --line:#E4DFDA; --fg:#141211; --muted:#6B645E; --or:#E85F00; --onor:#FFFFFF; --body:system-ui,-apple-system,"Segoe UI",sans-serif; --disp:Georgia,"Times New Roman",serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0E0D0C; --panel:#191715; --line:#2d2926; --fg:#F4F1EE; --muted:#A9A29C; --or:#FF7A1A; --onor:#0E0D0C; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg:#0E0D0C; --panel:#191715; --line:#2d2926; --fg:#F4F1EE; --muted:#A9A29C; --or:#FF7A1A; --onor:#0E0D0C; color-scheme: dark; }
+html { background: var(--bg); }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); line-height: 1.55; padding-inline: 16px; padding-block: 28px 56px; }
+.wrap { max-width: 980px; margin: 0 auto; display: grid; gap: 22px; }
+h1 { font-family: var(--disp); font-weight: 700; font-size: clamp(28px, 5vw, 40px); line-height: 1.1; margin: 0; text-wrap: balance; }
+.lead { color: var(--muted); margin: 6px 0 0; max-width: 66ch; }
+.specs { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 8px; }
+.specs h2 { font-size: 15px; margin: 0; }
+.specs ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 14px; }
+.specs b { color: var(--fg); }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; min-width: 0; }
+.card img { display: block; width: 100%; height: auto; }
+.cb { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 14px 18px; }
+.cb h3 { font-size: 17px; margin: 0; }
+.cb p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+button { background: var(--or); color: var(--onor); border: 0; border-radius: 6px; padding: 10px 16px; font: 700 14px var(--body); cursor: pointer; }
+button:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
+#st { min-height: 1.4em; font-size: 13px; color: var(--muted); }
+.note { font-size: 13px; color: var(--muted); }
+</style>
+<div class="wrap">
+  <header>
+    <h1>Tapas de Biblia</h1>
+    <p class="lead">Cinco diseños de tapa completa (contraportada, lomo y portada) en un solo PDF cada uno, con sangrado y listos para llevar a la imprenta. Las medidas son provisorias: se ajustan a los datos de tu imprenta.</p>
+  </header>
+  <section class="specs" aria-label="Medidas usadas">
+    <h2>Medidas con las que están hechos</h2>
+    <ul>
+      <li>Tamaño de cada tapa: <b>152,4 × 228,6 mm</b> (6 × 9 pulgadas)</li>
+      <li>Lomo: <b>30 mm</b> (provisorio: depende de las páginas y del papel)</li>
+      <li>Sangrado: <b>3 mm</b> por lado</li>
+      <li>Archivo completo: <b>340,8 × 234,6 mm</b>, una página, tipografías incluidas</li>
+    </ul>
+  </section>
+  <div id="st" role="status"></div>
+  <div id="list" class="wrap" style="gap:22px"></div>
+  <article class="card">
+    <img src="0_Guia_de_medidas.jpg" alt="Guía de medidas sobre el diseño clásico">
+    <div class="cb"><div><h3>Guía de medidas</h3><p>Rojo: corte final. Magenta: bordes del lomo. Celeste: margen seguro de las tapas. Verde: margen seguro del lomo.</p></div></div>
+  </article>
+  <p class="note">Si el botón no funciona en tu vista, abrí esta página en el navegador desde claude.ai para descargar los PDF.</p>
+</div>
+<script>
+(function () {
+  var D = [
+    ['1_Clasica_negro_y_oro', 'Clásica negro y oro', 'Marco dorado doble, cruz y tipografía clásica. Sobria y atemporal.'],
+    ['2_Azul_noche_y_plata', 'Azul noche y plata', 'Rayos de luz y cruz con halo. Transmite esperanza.'],
+    ['3_Marfil_minimalista', 'Marfil minimalista', 'Fondo claro, cruz fina y mucho espacio. Limpia y moderna.'],
+    ['4_Bordo_y_dorado', 'Bordó y dorado', 'Color vino con esquineros y cruz en círculo. Elegante y tradicional.'],
+    ['5_Moderno_naranja_y_negro', 'Moderno naranja y negro', 'Letras grandes y bloque naranja. Pensada para un público joven.']
+  ];
+  var list = document.getElementById('list'), st = document.getElementById('st'), dl = null;
+  D.forEach(function (d) {
+    var a = document.createElement('article'); a.className = 'card';
+    a.innerHTML = '<img src="' + d[0] + '.jpg" alt="Tapa completa: ' + d[1] + '"><div class="cb"><div><h3>' + d[1] + '</h3><p>' + d[2] + '</p></div><button type="button" data-f="' + d[0] + '.pdf">Descargar PDF</button></div>';
+    list.appendChild(a);
+  });
+  if (window.claude && window.claude.use) { window.claude.use('downloads').then(function (x) { dl = x; }); }
+  list.addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    if (!dl) { st.textContent = 'La descarga no está disponible en esta vista. Abrí la página en el navegador desde claude.ai.'; return; }
+    st.textContent = 'Preparando el PDF…';
+    fetch(b.dataset.f).then(function (r) { return r.blob(); })
+      .then(function (blob) { return dl.save({ filename: b.dataset.f, data: blob }); })
+      .then(function () { st.textContent = 'Listo: PDF guardado.'; })
+      .catch(function (err) { st.textContent = (err && err.code === 'declined') ? 'Descarga cancelada.' : 'No se pudo descargar. Probá abrir la página en el navegador.'; });
+  });
+})();
+</script>
